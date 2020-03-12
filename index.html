@@ -3,12 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>SkyPocket</title>
-<style type="text/css"></style>
-<script type="text/javascript" src="js/ControlBar.js"></script>
+
+<script>
+function changepage() {
+    window.location.href = "jhome.html";
+}
+$('#yindao').live("pagecreate", function() {
+	 //$("#div3").hide().fadeIn(3000);
+	  //$("#div3").fadeOut(3000); 
+    var id = setInterval("changepage()", 3000);
+})
+</script>
+ 
+<script>
+$(document).ready(function(){
+ 
+  
+    var div3_html = '<img src=url('https://s1.ax1x.com/2020/03/12/8e0RxS.jpg') style="width:100%; height: '+document.documentElement.clientHeight+'px;">';
+	$("#div3").html(div3_html);
+  
+});
+</script>
+ 
 </head>
+ 
 <body>
-<div id = 'test'></div><style>#test{width：1920px;height:1080px;background:url('https://s1.ax1x.com/2020/03/12/8e0RxS.jpg')repeat-x;}</style>
-
-
+<div data-role="page" id="yindao">
+ 
+<div id="div3" align="center" >
+ 
+</div>
+</div>
+ <div data-rol="page" id="">
 </body>
 </html>
